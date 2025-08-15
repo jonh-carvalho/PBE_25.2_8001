@@ -3,7 +3,7 @@
 | Aula                         | Conteúdo                                                                   |
 | ---------------------------- | --------------------------------------------------------------------------- |
 | __01__ - 08/08/25    | :material-check: Apresentação da Disciplina - Processo de Desenvolvimento <br> :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/Do%20Cascata%20ao%20Ágil.pdf) |
-| __02__ - 15/08/25     | :material-check: [Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) <br> :material-check: Configuração repositório  |
+| __02__ - 15/08/25     | :material-check: [Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABng3aZ0HtBI38y6beD8dItQ?e=iu4J3A) <br> :material-check: Configuração repositório  |
 | __03__ - 22/08/25     | :material-check: |
 | __04__ - 29/08/25     | :material-check:[RUP](../assets/Aulas/RUP.pdf)   |
 
