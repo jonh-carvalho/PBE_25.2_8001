@@ -144,5 +144,5 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-    logo: simple/react
-    favicon: simple/react
+    logo: simple/django
+    favicon: simple/django
