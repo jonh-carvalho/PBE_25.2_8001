@@ -98,6 +98,7 @@ plugins:
   - search
 
 theme:
+      
   name: material
   logo: assets/ibmec_logo.png
   palette:
