@@ -12,6 +12,9 @@ nav:
       - Github: Disciplina/github.md
       - Mkdocs: Disciplina/mkdocs.md
       - CodeSpace: Disciplina/codespace.md
+      - Roteiros: 
+          - Iniciação:
+              - Design Thinking: Disciplina/Roteiros/Iniciação/04_DesignThinking.md
   - Iniciação: 
       - Index: Iniciacao/index.md
       - Pesquisa: Iniciacao/pesquisa.md
@@ -98,6 +101,7 @@ plugins:
   - search
 
 theme:
+      
   name: material
   logo: assets/ibmec_logo.png
   palette:
@@ -144,5 +148,5 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-    logo: simple/react
-    favicon: simple/react
+    logo: simple/django
+    favicon: simple/django

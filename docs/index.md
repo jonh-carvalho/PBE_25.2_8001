@@ -10,7 +10,11 @@ hide:
 
 <div class="grid cards" markdown>
 
+<<<<<<< HEAD
 -   :material-github:{ .lg .right } __PBE_25.2_8001_I__
+=======
+-   <font color="#FFA07A"> :material-github:{ .lg .middle }  __PBE_25.2_8002_I__</font>
+>>>>>>> 1ddd919ba6d48bc353bae83960ddfd8cff118f4f
 
     ---
 
@@ -18,7 +22,11 @@ hide:
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8001_I)
 
+<<<<<<< HEAD
 -   :material-github:{ .lg .middle } __PBE_25.2_8001_II__
+=======
+-   <font color="#FFA07A"> :material-github:{ .lg .middle } __PBE_25.2_8002_II__</font>     
+>>>>>>> 1ddd919ba6d48bc353bae83960ddfd8cff118f4f
 
     ---
 
@@ -27,7 +35,11 @@ hide:
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8001_II)
 
 
+<<<<<<< HEAD
 -   :material-github:{ .lg .middle } __PBE_25.2_8001_III__
+=======
+-   <font color="#FFA07A">:material-github:{ .lg .middle } __PBE_25.2_8002_III__</font>
+>>>>>>> 1ddd919ba6d48bc353bae83960ddfd8cff118f4f
 
     ---
 
