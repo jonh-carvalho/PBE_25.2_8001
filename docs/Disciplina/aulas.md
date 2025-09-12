@@ -7,13 +7,9 @@
 | __03__ - 22/08/25     | :material-check: [RUP](../assets/Aulas/RUP.pdf) |
 | __04__ - 29/08/25     | :material-check: [Design Thinking](http://127.0.0.1:8000/Disciplina/Roteiros/Inicia%C3%A7%C3%A3o/04_DesignThinking/) |
 | __05__ - 05/09/25     | :material-check: Elaboração 5w2h  <br> :material-check: [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> :material-check: [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)|
-| __06__ - 12/09/25     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) |
-| __07__ - 19/09/25     | :material-check: <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> Protótipo de Baixa Fidelidade |
-| __08__ - 26/09/25     | AP1 |
-| __09__ - 03/10/25     | :material-check:  |
 <!--
 | __05__ - 21/03/25     | :material-check: Elaboração 5w2h  <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)|
-| __06__ - 28/03/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) |
+| __06__ - 28/03/24     |   <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) |
 | __07__ - 04/04/25     | :material-check: AP1    |
 | __08__ - 11/04/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - Introdução ao Django  |
 | __09__ - 18/04/25     | :material-check: Feriado  |
