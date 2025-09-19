@@ -1,87 +1,55 @@
 ---
-id: diagrama_de_casos de uso
-title: Diagrama de Casos de Uso
+id: template_classe
+layout: default
+title: Template de Classe
 ---
 
-## Casos de Uso
+# Template de Descrição de Classe
 
-### Descrição:
+## Nome da Classe
 
-- Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
+- **Descrição:**
+    - Breve descrição do propósito da classe e seu papel no sistema.
 
-- Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
+- **Atributos:**
+    - atributo1: tipo — descrição
+    - atributo2: tipo — descrição
+    - ...
 
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
+- **Métodos:**
+    - metodo1(parâmetros): tipo de retorno — descrição
+    - metodo2(parâmetros): tipo de retorno — descrição
+    - ...
 
-- Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
+- **Relacionamentos:**
+    - Associação, agregação, composição ou herança com outras classes (listar e descrever).
 
-- Galerias
-	- Albuns
-- Blogs
-- Grupos
+- **Regras de Negócio Relacionadas:**
+    - Listar regras de negócio do documento de casos de uso que impactam esta classe.
 
-### Criação de uma conta no sistema
+- **Casos de Uso Relacionados:**
+    - Listar os casos de uso do documento que envolvem esta classe.
 
-* Atores:
+- **Observações:**
+    - Pontos importantes, restrições ou detalhes adicionais.
 
-	- Usuário
-	- Sistema
+---
 
-- Pré-Condições:
-	- Nenhuma
+Adicionar o diagrama de classes.
 
-* Fluxo Básico:
-    1. Usuário fornece e-mail, senha e confirmações
-    2. Dados do Usuário são validados pelo Sistema
-    3. Dados do Usuário são encriptados pelo Sistema
-    4. Dados do Usuário são persistidos pelo Sistema
-    5. Sistema gera um link com prazo de expiração
-    6. Sistema envia e-mail de verificação, com o link, para o Usuário
-    7. Usuário confirma o e-mail antes do link expirar
-    8. Sistema confirma que o Cadastro do Usuário foi realizado com sucesso
-    9. Sistema redireciona o Usuário para a página de Entrada
-
-- Fluxos Alternativos:
-	- 2a. E-mail do Usuário é inválido
-		2a1. Sistema exibe mensagem de erro
-	- 2b. Senha do Usuário não respeita regras de segurança
-		- 2b1. Sistema exibe mensagem de erro
-	- 3a. Usuário tenta confirmar o e-mail depois de o link expirar
-		- 3a1. Sistema sugere que o Usuário realize um novo Cadastro
-
-### Entrada do usuário no sistema
-
-- Atores:
-	- Usuário
-	- Sistema
-
-- Pré-Condições:
-	Usuário deve estar cadastrado
-
-- Fluxo Básico:
-    - 1. Usuário fornece e-mail e senha
-	- 2. Sistema autentica o Usuário
-	- 3. Sistema redireciona o Usuário para a página inicial
-
-- Fluxos Alternativos:
-	- 2a. Dados do Usuário Inválidos
-		- 2a1. Sistema exibe mensagem de erro
-	- 3a. Primeio acesso do Usuário
-		- 3a1. Sistema redireciona o Usuário para a página de edição de perfil
+```plantuml
+@startuml
+class Usuario {
+  +id: int
+  +nome: string
+  +email: string
+  +senha: string
+  +tipo_assinatura: TipoAssinatura
+  +autenticar()
+  +reservarLivro()
+  +baixarLivro()
+  +assinarPremium()
+  +receberNotificacao()
+}
+@enduml
+```
