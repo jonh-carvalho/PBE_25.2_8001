@@ -8,15 +8,25 @@ nav:
   - Home: index.md
   - Disciplina:
       - Aulas: Disciplina/aulas.md
-      - Avaliações: Disciplina/avaliacoes.md
       - Ambiente: Disciplina/ambiente.md
       - Github: Disciplina/github.md
-      - CodeSpace: Disciplina/codespace.md
       - Mkdocs: Disciplina/mkdocs.md
+      - CodeSpace: Disciplina/codespace.md
+      - Avaliações: Disciplina/avalia.md
+      - Issues e Projects: Disciplina/issues_projects.md
+      - Dojo: 
+          - Index: Disciplina/dojo/dojo.md
+          - Setup: Disciplina/dojo/setup.md
+          - TDD/Pair: Disciplina/dojo/tddpairprogramming.md
       - Roteiros: 
           - Iniciação:
               - Design Thinking: Disciplina/Roteiros/Iniciação/04_DesignThinking.md
               - UP: Disciplina/Roteiros/Iniciação/04_UPgithub.md
+          - Elaboração:
+              - Requisitos: Disciplina/Roteiros/Elaboração/req_biblioteca.md
+              - Casos de Uso: Disciplina/Roteiros/Elaboração/uc_biblioteca.md
+              - Diagrama de Classes: Disciplina/Roteiros/Elaboração/class_biblioteca.md      
+  
   - Iniciação: 
       - Index: Iniciacao/index.md
       - Pesquisa: Iniciacao/pesquisa.md
@@ -26,14 +36,15 @@ nav:
       - Mapa Mental: Iniciacao/mapa_mental.md
       - Design Thinking: Iniciacao/design_thinking.md
       - Prototipagem Baixa Fidelidade: Iniciacao/prototipo_baixa_fidelidade.md
+    
   - Elaboração:
       - Index: Elaboracao/index.md
       - Requisitos: Elaboracao/espreq.md
-      - Casos de Uso: Elaboracao/casos_de_uso.md
+      - Casos de Uso: Elaboracao/diagrama_casos_de_uso.md
       - Diagrama de Classes: Elaboracao/diagrama_de_classes.md
       - Diagrama de Sequência: Elaboracao/diagrama_de_sequencia.md
-      - Protótipo de Alta Fidelidade: Elaboracao/prototipo_alta_fidelidade.md
-      - Documento de Arquitetura: Elaboracao/das.md
+      - Protótipo de Baixa Fidelidade: Elaboracao/prototipo_baixa_fidelidade.md
+  
   - Construção:
       - Index: Construcao/index.md
       - Git Issues: Construcao/git_issues.md
