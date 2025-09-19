@@ -4,7 +4,7 @@ Este cenário foca em resolver os desafios mais imediatos e manuais do processo 
 
 - Funcionalidades:
 
-    - Portal de Vagas: Interface para que professores publiquem as vagas de monitoria, especificando a disciplina, os pré-requisitos, as responsabilidades e o número de vagas.
+    - Portal de Vagas: Interface para que coordenadores publiquem as vagas de monitoria, especificando a disciplina, os pré-requisitos, as responsabilidades e o número de vagas.
 
     - Cadastro de Candidatos: Permite que os alunos interessados criem um perfil, anexem documentos relevantes (histórico escolar, currículo, carta de motivação) e se candidatem às vagas disponíveis.
 
