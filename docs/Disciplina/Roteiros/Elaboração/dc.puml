@@ -1,0 +1,36 @@
+@startuml teste
+' Diagrama de Classe - Biblioteca Digital
+
+class Usuario {
+  
+}
+
+class Livro {
+  
+}
+
+class Biblioteca {
+  
+}
+
+class Assinatura {
+  
+}
+
+class Reserva {
+  
+}
+
+class SistemaPagamento {
+  + processarPagamento(usuario: Usuario, valor: double)
+}
+
+Usuario --  Reserva : faz
+Reserva  -- "1" Livro : refere-se
+Usuario  --  Assinatura : possui
+Biblioteca  --  Livro : gerencia
+Biblioteca  --  Usuario : gerencia
+Reserva  --  Biblioteca : registrada em
+Assinatura ..> SistemaPagamento : <<usa>>
+
+@enduml

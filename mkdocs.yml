@@ -109,8 +109,9 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - minify:
-      minify_html: true
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: plantuml
   - search
 
 theme:

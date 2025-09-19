@@ -168,101 +168,40 @@ Este documento apresenta a modelagem conceitual das principais classes do sistem
 - A integração com o sistema de pagamento ocorre via classe **Pagamento**.
 
 ```plantuml
-@startuml
+@startuml teste
+' Diagrama de Classe - Biblioteca Digital
+
 class Usuario {
-  +id: int
-  +nome: string
-  +email: string
-  +senha: string
-  +tipo_assinatura: TipoAssinatura
-  +autenticar()
-  +reservarLivro()
-  +baixarLivro()
-  +assinarPremium()
-  +receberNotificacao()
+  
 }
 
 class Livro {
-  +id: int
-  +titulo: string
-  +autor: string
-  +categoria: string
-  +formato: FormatoLivro
-  +exclusivo: bool
-  +disponivel: bool
-  +estaDisponivel()
-  +reservar()
-  +baixar()
+  
 }
 
-class Reserva {
-  +id: int
-  +data_reserva: datetime
-  +data_expiracao: datetime
-  +status: StatusReserva
-  +verificarExpiracao()
-  +concluirReserva()
+class Biblioteca {
+  
 }
 
 class Assinatura {
-  +id: int
-  +data_inicio: datetime
-  +data_fim: datetime
-  +status: StatusAssinatura
-  +renovar()
-  +cancelar()
+  
 }
 
-class Notificacao {
-  +id: int
-  +mensagem: string
-  +data_envio: datetime
-  +lida: bool
-  +marcarComoLida()
+class Reserva {
+  
 }
 
-class Pagamento {
-  +id: int
-  +valor: float
-  +data_pagamento: datetime
-  +status: StatusPagamento
-  +processarPagamento()
+class SistemaPagamento {
+  + processarPagamento(usuario: Usuario, valor: double)
 }
 
-enum TipoAssinatura {
-  BASICO
-  PREMIUM
-}
-
-enum FormatoLivro {
-  PDF
-  EPUB
-}
-
-enum StatusReserva {
-  ATIVA
-  EXPIRADA
-  CONCLUIDA
-}
-
-enum StatusAssinatura {
-  ATIVA
-  EXPIRADA
-}
-
-enum StatusPagamento {
-  PENDENTE
-  APROVADO
-  RECUSADO
-}
-
-Usuario "1" -- "0..*" Reserva
-Usuario "1" -- "0..*" Assinatura
-Usuario "1" -- "0..*" Notificacao
-Usuario "1" -- "0..*" Pagamento
-Livro "1" -- "0..*" Reserva
-Reserva "*" -- "1" Usuario
-Reserva "*" -- "1" Livro
+Usuario --  Reserva : faz
+Reserva  -- Livro : refere-se
+Usuario  --  Assinatura : possui
+Biblioteca  --  Livro : gerencia
+Biblioteca  --  Usuario : gerencia
+Reserva  --  Biblioteca : registrada em
+Assinatura .. SistemaPagamento : <<usa>>
 
 @enduml
 ```
