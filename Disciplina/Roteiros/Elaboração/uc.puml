@@ -1,0 +1,23 @@
+@startuml teste
+left to right direction
+
+actor Usuario
+actor SistemaPagamento
+
+Usuario --> (Cadastrar-se)
+Usuario --> (Autenticar/Login)
+Usuario --> (Buscar Livro)
+Usuario --> (Reservar Livro)
+Usuario --> (Baixar Livro)
+Usuario --> (Assinar Premium)
+Usuario --> (Receber Notificações)
+
+(Reservar Livro) .> (Verificar Limite de Reservas) : <<include>>
+(Reservar Livro) .> (Verificar Disponibilidade do Livro) : <<include>>
+(Reservar Livro) .> (Verificar Status Premium) : <<include>>
+(Assinar Premium) --> SistemaPagamento : "Pagamento"
+
+Usuario --> (Visualizar Livros Exclusivos)
+(Visualizar Livros Exclusivos) .> (Verificar Status Premium) : <<include>>
+
+@enduml
