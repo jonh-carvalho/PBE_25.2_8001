@@ -37,5 +37,12 @@ hide:
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8001_III)
 
-</div>
+-   <font color="#FFA07A">:material-github:{ .lg .middle } __PBE_25.2_8002_IV__</font>
 
+    ---
+
+    Anderson, Bernardo, Gabriel
+
+    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8001_IV)
+
+</div>
