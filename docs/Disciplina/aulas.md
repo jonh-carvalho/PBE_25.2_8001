@@ -11,7 +11,7 @@
 | __07__ - 19/09/25     | :material-check: <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> Protótipo de Baixa Fidelidade |
 | __08__ - 26/09/25     | AP1 |
 | __09__ - 03/10/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - Introdução ao Django  |
-| __10__ - 10/10/25     | :material-check: Roteiro Django  |
+| __10__ - 10/10/25     | :material-check: Roteiro Django |
 | __11__ - 17/10/25     | :material-check: Roteiro Django |
 | __12__ - 24/10/25     | :material-check: Roteiro Streaming |
 | __13__ - 31/10/25     | :material-check: Roteiro Streaming |
