@@ -10,6 +10,15 @@
 | __06__ - 12/09/25     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) |
 | __07__ - 19/09/25     | :material-check: <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> Protótipo de Baixa Fidelidade |
 | __08__ - 26/09/25     | AP1 |
+| __09__ - 03/10/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - Introdução ao Django  |
+| __10__ - 10/10/25     | :material-check: Roteiro Django  |
+| __11__ - 17/10/25     | :material-check: Roteiro Django |
+| __12__ - 24/10/25     | :material-check: Roteiro Streaming |
+| __13__ - 31/10/25     | :material-check: Roteiro Streaming |
+| __14__ - 07/11/25     | :material-check: Roteiro Streaming |
+| __15__ - 14/11/25     | :material-check: AP2 |
+| __16__ - 21/11/25     | :material-check:  |
+| __17__ - 28/11/25     | :material-check: AS |
 
 <!--
 | __05__ - 21/03/25     | :material-check: Elaboração 5w2h  <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) e [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)|
