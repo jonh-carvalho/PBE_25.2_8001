@@ -49,7 +49,7 @@ hide:
 
     ---
 
-    Anderson, Bernardo, Gabriel
+    Anderson, Bernardo, Gabriel, João Pedro
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8001_IV)
 
