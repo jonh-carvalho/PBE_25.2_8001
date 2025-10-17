@@ -1,4 +1,4 @@
-# 05 - Playlist -Relacionamento NxN
+# 6 - Playlist -Relacionamento NxN
 
 ## Playlist
 

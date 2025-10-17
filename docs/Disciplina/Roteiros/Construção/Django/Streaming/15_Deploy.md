@@ -1,4 +1,4 @@
-# 15 - Deploy
+# 17 - Deploy
 
 O **deploy mais simples** de um projeto **Django REST com SQLite** é usando o **[Render.com](https://render.com/)** — ideal para testes, MVPs ou protótipos.
 

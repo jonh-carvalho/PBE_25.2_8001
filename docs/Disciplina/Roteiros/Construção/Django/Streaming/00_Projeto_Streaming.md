@@ -1,4 +1,4 @@
-# 00 - **Projeto Streaming**
+# 0 - **Projeto Streaming**
 
 ## Introdução
 

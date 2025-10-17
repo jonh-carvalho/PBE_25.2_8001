@@ -1,4 +1,4 @@
-# 03 - Rest Streaming
+# 3 - Rest Streaming
 
 ## Introdução
 

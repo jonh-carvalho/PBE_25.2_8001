@@ -1,4 +1,4 @@
-# 02 - **Modelagem de Dados**
+# 2 - **Modelagem de Dados**
 
 ## Projeto Físico
 
