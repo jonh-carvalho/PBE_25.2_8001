@@ -2,14 +2,14 @@
 
 ---
 
-## ✅ Regras de Negócio
+## Regras de Negócio
 
 1. **Cada conteúdo deve ter uma miniatura (`thumbnail_url`) e uma descrição.**
 2. **O título deve ser único por criador (`User`).**
 
 ---
 
-## 🧩 Modelo `Content` com validações
+## Modelo `Content` com validações
 
 ```python
 # models.py
@@ -55,7 +55,7 @@ class Content(models.Model):
 
 ---
 
-## ✅ O que acontece com essas regras?
+## O que acontece com essas regras?
 
 * Se um usuário tentar **salvar um conteúdo sem descrição ou sem miniatura**, ele receberá um erro.
 * Se um mesmo criador tentar cadastrar **dois conteúdos com o mesmo título**, receberá erro de validação.
@@ -71,7 +71,7 @@ Perfeito! Abaixo está a adaptação das **regras de negócio** diretamente no `
 
 ---
 
-## ✅ `serializers.py` com validações personalizadas
+## `serializers.py` com validações personalizadas
 
 ```python
 # serializers.py
@@ -115,7 +115,7 @@ class ContentSerializer(serializers.ModelSerializer):
 
 ---
 
-## 🧩 O que foi feito:
+## O que foi feito:
 
 * O método `validate` trata múltiplos campos ao mesmo tempo.
 * `request.user` é usado como o criador (owner).
@@ -124,7 +124,7 @@ class ContentSerializer(serializers.ModelSerializer):
 
 ---
 
-## ✅ Exemplo de `views.py`
+## Exemplo de `views.py`
 
 ```python
 # views.py
@@ -152,7 +152,7 @@ Agora temos as regras no **admin Django** para reforçar a validação em múlti
 
 ---
 
-## ✅ 1. Adicionar validações no `ModelAdmin`
+## 1. Adicionar validações no `ModelAdmin`
 
 ```python
 # admin.py
@@ -193,7 +193,7 @@ admin.site.register(Content, ContentAdmin)
 
 ---
 
-### ✅ 2. Benefícios dessas validações no Admin
+### 2. Benefícios dessas validações no Admin
 
 * Garante que **mesmas regras aplicadas na API também valem no admin**.
 * O admin exibe mensagens amigáveis quando há erros.
@@ -210,14 +210,14 @@ As regras são:
 
 ---
 
-### ✅ Regras de Negócio
+### Regras de Negócio
 
 1. **Título único por usuário** — o nome da playlist deve ser único para cada criador.
 2. **Conteúdos não podem ser duplicados dentro de uma mesma playlist.**
 
 ---
 
-## 🧩 MODELO (`models.py`)
+## MODELO (`models.py`)
 
 ```python
 from django.db import models
@@ -245,7 +245,7 @@ class Playlist(models.Model):
 
 ---
 
-## 🧩 SERIALIZER (`serializers.py`)
+## SERIALIZER (`serializers.py`)
 
 ```python
 from rest_framework import serializers
@@ -289,7 +289,7 @@ class PlaylistSerializer(serializers.ModelSerializer):
 
 ---
 
-## 🧩 VIEWS (`views.py`)
+## VIEWS (`views.py`)
 
 ```python
 from rest_framework import viewsets, permissions
@@ -311,7 +311,7 @@ class PlaylistViewSet(viewsets.ModelViewSet):
 
 ---
 
-## 🧩 URLs (`urls.py`)
+## URLs (`urls.py`)
 
 ```python
 from django.urls import path, include
@@ -328,7 +328,7 @@ urlpatterns = [
 
 ---
 
-## 🧩 DJANGO ADMIN (`admin.py`)
+## DJANGO ADMIN (`admin.py`)
 
 ```python
 from django.contrib import admin
@@ -351,7 +351,7 @@ admin.site.register(Playlist, PlaylistAdmin)
 
 ---
 
-## ✅ Resultado
+## Resultado
 
 * **Playlists com nomes únicos por usuário.**
 * **Conteúdos duplicados são rejeitados.**

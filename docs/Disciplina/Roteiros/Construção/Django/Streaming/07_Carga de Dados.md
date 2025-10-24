@@ -1,6 +1,6 @@
 # 7 - Carga de Dados
 
-## ✅ 1. Estrutura do JSON (`contents.json`)
+## 1. Estrutura do JSON (`contents.json`)
 
 Salve este conteúdo como `contents.json` na raiz do projeto ou em um diretório de sua escolha:
 
@@ -27,7 +27,7 @@ Salve este conteúdo como `contents.json` na raiz do projeto ou em um diretório
 
 ---
 
-## ✅ 2. Comando Customizado Adaptado
+## 2. Comando Customizado Adaptado
 
 Crie o comando:
 
@@ -79,7 +79,7 @@ class Command(BaseCommand):
 
 ---
 
-## ✅ 3. Executar o Comando
+## 3. Executar o Comando
 
 Coloque o arquivo `contents.json` no diretório do projeto ou informe o caminho correto.
 

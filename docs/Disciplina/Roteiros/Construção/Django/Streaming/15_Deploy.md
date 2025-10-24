@@ -8,7 +8,7 @@ Tutorial deploy com apenas um [Fork do repositório](https://github.com/render-e
 
 ---
 
-## ✅ 1. **Pré-requisitos**
+## 1. **Pré-requisitos**
 
 * Conta no [GitHub](https://github.com/)
 * Conta no [Render](https://render.com/)
@@ -16,7 +16,7 @@ Tutorial deploy com apenas um [Fork do repositório](https://github.com/render-e
 
 ---
 
-## ✅ 2. **Prepare o projeto Django**
+## 2. **Prepare o projeto Django**
 
 ### 2.1. Instale pacotes necessários:
 
@@ -40,7 +40,7 @@ Substitua `nome_do_projeto` pelo nome da pasta principal do seu Django (onde est
 
 ---
 
-## ✅ 3. **Configurações no `settings.py`**
+## 3. **Configurações no `settings.py`**
 
 ### 3.1. Altere `ALLOWED_HOSTS`:
 
@@ -53,7 +53,7 @@ ALLOWED_HOSTS = ['*']  # Em produção, use o domínio real
 
 ---
 
-## ✅ 4. **Configurar arquivos estáticos**
+## 4. **Configurar arquivos estáticos**
 
 No final do `settings.py`:
 
@@ -64,7 +64,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 ---
 
-## ✅ 5. **Comitar no Git e subir no GitHub**
+## 5. **Comitar no Git e subir no GitHub**
 
 ```bash
 git init
@@ -76,7 +76,7 @@ git push -u origin main
 
 ---
 
-## ✅ 6. **Criar app no Render**
+## 6. **Criar app no Render**
 
 1. Vá para [Render Dashboard](https://dashboard.render.com/)
 
@@ -101,7 +101,7 @@ git push -u origin main
 
 ---
 
-## ✅ 7. **Coletar arquivos estáticos e migrar banco**
+## 7. **Coletar arquivos estáticos e migrar banco**
 
 Após o deploy, vá no painel do serviço → aba **Shell**:
 
@@ -112,13 +112,13 @@ python manage.py migrate
 
 ---
 
-## ✅ 8. **Acessar o site**
+## 8. **Acessar o site**
 
 Seu app Django REST estará publicado no domínio `.onrender.com`.
 
 ---
 
-## 📝 Observações
+## Observações
 
 * O SQLite funciona, mas é **volátil**: ao reiniciar o container, os dados são perdidos.
 * Para persistência real, use PostgreSQL (Render oferece serviço de banco gratuito).

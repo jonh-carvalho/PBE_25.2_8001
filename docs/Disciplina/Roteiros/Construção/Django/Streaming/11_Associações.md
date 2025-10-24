@@ -6,7 +6,7 @@ Abaixo, temos cada conceito com uma explicação e exemplos baseados nas classes
 
 ---
 
-## ✅ 1. **Associação**
+## 1. **Associação**
 
 > **Objetos se comunicam temporariamente.**
 
@@ -24,7 +24,7 @@ class ContentView(APIView):
 
 ---
 
-## ✅ 2. **Agregação**
+## 2. **Agregação**
 
 > **Relação "tem-um"** onde a parte pode existir sem o todo.
 
@@ -43,7 +43,7 @@ Aqui, `Content` existe independentemente da `Playlist`.
 
 ---
 
-## ✅ 3. **Composição**
+## 3. **Composição**
 
 > **Relação "parte-de"**, onde a parte **não existe sem o todo**.
 
@@ -65,7 +65,7 @@ O `Thumbnail` não existiria fora do `Content`.
 
 ---
 
-## ✅ 4. **Herança**
+## 4. **Herança**
 
 > **"É-um"**: Uma subclasse herda de uma superclasse.
 
@@ -89,7 +89,7 @@ class AudioContent(BaseContent):
 
 ---
 
-## ✅ 5. **Dependência**
+## 5. **Dependência**
 
 > Uma classe **usa** outra temporariamente.
 
@@ -108,7 +108,7 @@ Aqui, o serializer depende temporariamente da estrutura do `Playlist`.
 
 ---
 
-## ✅ 6. **Realização**
+## 6. **Realização**
 
 > Implementação de uma **interface (abstração)**.
 
@@ -126,7 +126,7 @@ A `ContentListView` **realiza** (implementa) a interface da `APIView`.
 
 ---
 
-## ✅ 7. **Associação Bidirecional**
+## 7. **Associação Bidirecional**
 
 > Duas classes se referenciam mutuamente.
 
@@ -146,7 +146,7 @@ user.playlist_set.all()  # do user para as playlists
 
 ---
 
-## ✅ 8. **Cardinalidade (1:1)**
+## 8. **Cardinalidade (1:1)**
 
 > Uma instância de um modelo se relaciona com exatamente uma instância de outro.
 
@@ -262,7 +262,7 @@ ContentView ..|> APIView
 
 ---
 
-### ✅ Como usar
+### Como usar
 
 1. Copie esse código para um arquivo com extensão `.puml`, ou use um site como:
 
