@@ -1381,7 +1381,7 @@
         <li class="md-nav__item">
   <a href="#1-estrutura-do-json-contentsjson" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 1. Estrutura do JSON (contents.json)
+      1. Estrutura do JSON (contents.json)
     </span>
   </a>
   
@@ -1390,7 +1390,7 @@
         <li class="md-nav__item">
   <a href="#2-comando-customizado-adaptado" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 2. Comando Customizado Adaptado
+      2. Comando Customizado Adaptado
     </span>
   </a>
   
@@ -1399,7 +1399,7 @@
         <li class="md-nav__item">
   <a href="#3-executar-o-comando" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 3. Executar o Comando
+      3. Executar o Comando
     </span>
   </a>
   
@@ -2504,7 +2504,7 @@
 
 
 <h1 id="7-carga-de-dados">7 - Carga de Dados<a class="headerlink" href="#7-carga-de-dados" title="Permanent link">&para;</a></h1>
-<h2 id="1-estrutura-do-json-contentsjson">✅ 1. Estrutura do JSON (<code>contents.json</code>)<a class="headerlink" href="#1-estrutura-do-json-contentsjson" title="Permanent link">&para;</a></h2>
+<h2 id="1-estrutura-do-json-contentsjson">1. Estrutura do JSON (<code>contents.json</code>)<a class="headerlink" href="#1-estrutura-do-json-contentsjson" title="Permanent link">&para;</a></h2>
 <p>Salve este conteúdo como <code>contents.json</code> na raiz do projeto ou em um diretório de sua escolha:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p">{</span>
@@ -2526,7 +2526,7 @@
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">]</span>
 </span></code></pre></div>
 <hr />
-<h2 id="2-comando-customizado-adaptado">✅ 2. Comando Customizado Adaptado<a class="headerlink" href="#2-comando-customizado-adaptado" title="Permanent link">&para;</a></h2>
+<h2 id="2-comando-customizado-adaptado">2. Comando Customizado Adaptado<a class="headerlink" href="#2-comando-customizado-adaptado" title="Permanent link">&para;</a></h2>
 <p>Crie o comando:</p>
 <p>📁 <code>seu_app/management/commands/load_contents_json.py</code></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
@@ -2572,7 +2572,7 @@
 </span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">(</span><span class="s1">&#39;Importação finalizada.&#39;</span><span class="p">))</span>
 </span></code></pre></div>
 <hr />
-<h2 id="3-executar-o-comando">✅ 3. Executar o Comando<a class="headerlink" href="#3-executar-o-comando" title="Permanent link">&para;</a></h2>
+<h2 id="3-executar-o-comando">3. Executar o Comando<a class="headerlink" href="#3-executar-o-comando" title="Permanent link">&para;</a></h2>
 <p>Coloque o arquivo <code>contents.json</code> no diretório do projeto ou informe o caminho correto.</p>
 <p>Execute com:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>load_contents_json<span class="w"> </span>contents.json
