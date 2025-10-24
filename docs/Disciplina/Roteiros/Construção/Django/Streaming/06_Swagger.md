@@ -6,10 +6,10 @@ Para adicionar documentação moderna ao seu projeto Django com Django REST Fram
 
 ### Por que usar drf-spectacular?
 
-- ✅ **Moderno**: Suporte completo ao OpenAPI 3.0
-- ✅ **Ativo**: Biblioteca mantida e atualizada regularmente
-- ✅ **Performático**: Melhor performance que o drf-yasg
-- ✅ **Recursos avançados**: Suporte a schemas complexos e customizações
+- **Moderno**: Suporte completo ao OpenAPI 3.0
+- **Ativo**: Biblioteca mantida e atualizada regularmente
+- **Performático**: Melhor performance que o drf-yasg
+- **Recursos avançados**: Suporte a schemas complexos e customizações
 
 ### Passos para Configurar com `drf-spectacular`
 
@@ -17,78 +17,78 @@ Para adicionar documentação moderna ao seu projeto Django com Django REST Fram
 
    Execute o seguinte comando para instalar a biblioteca:
 
-   ```bash
-   pip install drf-spectacular
-   ```
+```bash
+pip install drf-spectacular
+```
 
 2. **Configurar o `drf-spectacular` no Projeto**
 
    **2.1. Adicionar ao `settings.py`:**
 
-   ```python
-   # settings.py
-   INSTALLED_APPS = [
-       # outros apps padrão
-       'rest_framework',
-       'drf_spectacular',  # Adicionar aqui
-       'content_app',
-   ]
+```python
+# settings.py
+INSTALLED_APPS = [
+# outros apps padrão
+'rest_framework',
+'drf_spectacular',  # Adicionar aqui
+'content_app',
+]
 
-   # Configuração do Django REST Framework
-   REST_FRAMEWORK = {
-       'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-       'DEFAULT_AUTHENTICATION_CLASSES': [
-           'rest_framework.authentication.SessionAuthentication',
-       ],
-       'DEFAULT_PERMISSION_CLASSES': [
-           'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-       ],
-   }
+# Configuração do Django REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+       'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ],
+}
 
-   # Configurações do drf-spectacular
-   SPECTACULAR_SETTINGS = {
-       'TITLE': 'Streaming Platform API',
-       'DESCRIPTION': 'API completa para plataforma de streaming de áudio e vídeo',
-       'VERSION': '1.0.0',
-       'SERVE_INCLUDE_SCHEMA': False,
-       'COMPONENT_SPLIT_REQUEST': True,
-       'SORT_OPERATIONS': False,
-       'TAGS': [
-           {'name': 'Authentication', 'description': 'Endpoints de autenticação'},
-           {'name': 'Content', 'description': 'Gerenciamento de conteúdo'},
-           {'name': 'Playlists', 'description': 'Gerenciamento de playlists'},
-           {'name': 'Users', 'description': 'Gerenciamento de usuários'},
-       ],
-   }
-   ```
+# Configurações do drf-spectacular
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Streaming Platform API',
+    'DESCRIPTION': 'API completa para plataforma de streaming de áudio e vídeo',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True,
+    'SORT_OPERATIONS': False,
+    'TAGS': [
+        {'name': 'Authentication', 'description': 'Endpoints de autenticação'},
+        {'name': 'Content', 'description': 'Gerenciamento de conteúdo'},
+        {'name': 'Playlists', 'description': 'Gerenciamento de playlists'},
+        {'name': 'Users', 'description': 'Gerenciamento de usuários'},
+    ],
+}
+```
 
-   **2.2. Configurar URLs no projeto:**
+ **2.2. Configurar URLs no projeto:**
 
    Abra o arquivo `urls.py` do seu projeto Django e adicione as seguintes configurações:
 
-   ```python
-   # streaming_platform/urls.py
-   from django.contrib import admin
-   from django.urls import path, include
-   from drf_spectacular.views import (
-       SpectacularAPIView,
-       SpectacularRedocView,
-       SpectacularSwaggerView,
-   )
+ ```python
+ # streaming_platform/urls.py
+ from django.contrib import admin
+ from django.urls import path, include
+ from drf_spectacular.views import (
+     SpectacularAPIView,
+     SpectacularRedocView,
+     SpectacularSwaggerView,
+ )
 
-   urlpatterns = [
-       # URLs do admin
-       path('admin/', admin.site.urls),
-       
-       # URLs da API
-       path('api/', include('content_app.urls')),
-       
-       # URLs da documentação
-       path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-       path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-       path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
-   ]
-   ```
+ urlpatterns = [
+     # URLs do admin
+     path('admin/', admin.site.urls),
+     
+     # URLs da API
+     path('api/', include('content_app.urls')),
+     
+     # URLs da documentação
+     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+     path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+]
+```
 
 3. **Acessar a Documentação da API**
 
@@ -113,7 +113,7 @@ Para adicionar documentação moderna ao seu projeto Django com Django REST Fram
 
    Use decorators do `drf-spectacular` para melhorar a documentação:
 
-   ```python
+```python
    # views.py
    from rest_framework import viewsets
    from drf_spectacular.utils import extend_schema, extend_schema_view
@@ -148,7 +148,7 @@ Para adicionar documentação moderna ao seu projeto Django com Django REST Fram
 
        def perform_create(self, serializer):
            serializer.save(creator=self.request.user)
-   ```
+```
 
 5. **Customizar Serializers para Melhor Documentação**
 
@@ -272,30 +272,22 @@ Para adicionar documentação moderna ao seu projeto Django com Django REST Fram
        filterset_class = ContentFilter
    ```
 
-### Migração do drf-yasg para drf-spectacular
 
-Se você está migrando de `drf-yasg`, siga estes passos:
-
-1. **Remover drf-yasg**:
-   ```bash
-   pip uninstall drf-yasg
-   ```
-
-2. **Instalar drf-spectacular**:
+1. **Instalar drf-spectacular**:
    ```bash
    pip install drf-spectacular
    ```
 
-3. **Atualizar settings.py**:
-   - Remover `drf_yasg` do `INSTALLED_APPS`
-   - Adicionar `drf_spectacular`
-   - Adicionar configurações do `SPECTACULAR_SETTINGS`
+2. **Atualizar settings.py**:
 
-4. **Atualizar urls.py**:
-   - Substituir imports do `drf_yasg` pelos do `drf_spectacular`
+    - Adicionar `drf_spectacular`
+    - Adicionar configurações do `SPECTACULAR_SETTINGS`
 
-5. **Atualizar decorators**:
-   - Substituir `@swagger_auto_schema` por `@extend_schema`
+3. **Atualizar urls.py**:
+   - Imports do  `drf_spectacular`
+
+4. **Atualizar decorators**:
+   - Adicionar `@extend_schema` nos lugares apropriados
 
 ### Comandos Úteis
 
