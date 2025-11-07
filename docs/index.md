@@ -10,12 +10,12 @@ hide:
 
 <div class="grid cards" markdown>
 
--   <font color="#FFA07A">:material-github:{ .lg .middle } __ISkills - Não dei de avaliar__</font>
+-   <font color="#FFA07A">:material-github:{ .lg .middle } __ISkills - Não deixe de avaliar__</font>
 
     ---
 
    
-      <a href="https://iskills.ibmec.edu.br" target="_blank"><img src="assets/iskills.png" alt="ibmec iskills" style="max-width:220px; width:auto; height:140px; border-radius:6px;" /></a>
+      
   
 
 -   <font color="#FFA07A"> :material-github:{ .lg .middle } __PBE_25.2_8001_I__</font>
