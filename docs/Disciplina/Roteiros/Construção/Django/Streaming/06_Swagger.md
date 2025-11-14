@@ -62,31 +62,31 @@ SPECTACULAR_SETTINGS = {
 }
 ```
 
- **2.2. Configurar URLs no projeto:**
+**2.2. Configurar URLs no projeto:**
 
    Abra o arquivo `urls.py` do seu projeto Django e adicione as seguintes configurações:
 
- ```python
- # streaming_platform/urls.py
- from django.contrib import admin
- from django.urls import path, include
- from drf_spectacular.views import (
-     SpectacularAPIView,
-     SpectacularRedocView,
-     SpectacularSwaggerView,
- )
+```python
+# streaming_platform/urls.py
+from django.contrib import admin
+from django.urls import path, include
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularRedocView,
+    SpectacularSwaggerView,
+)
 
- urlpatterns = [
-     # URLs do admin
-     path('admin/', admin.site.urls),
-     
-     # URLs da API
-     path('api/', include('content_app.urls')),
-     
-     # URLs da documentação
-     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-     path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+urlpatterns = [
+    # URLs do admin
+    path('admin/', admin.site.urls),
+    
+    # URLs da API
+    path('api/', include('content_app.urls')),
+    
+    # URLs da documentação
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]
 ```
 
@@ -152,28 +152,28 @@ SPECTACULAR_SETTINGS = {
 
 5. **Customizar Serializers para Melhor Documentação**
 
-   ```python
-   # serializers.py
-   from rest_framework import serializers
-   from drf_spectacular.utils import extend_schema_field
-   from .models import Content
+```python
+# serializers.py
+from rest_framework import serializers
+from drf_spectacular.utils import extend_schema_field
+from .models import Content
 
-   class ContentSerializer(serializers.ModelSerializer):
-       creator_name = serializers.SerializerMethodField()
-       
-       class Meta:
-           model = Content
-           fields = [
-               'id', 'title', 'description', 'file_url', 
-               'content_type', 'is_public', 'creator_name'
-           ]
-           read_only_fields = ['id', 'creator_name']
+class ContentSerializer(serializers.ModelSerializer):
+    creator_name = serializers.SerializerMethodField()
+    
+    class Meta:
+        model = Content
+        fields = [
+            'id', 'title', 'description', 'file_url', 
+            'content_type', 'is_public', 'creator_name'
+        ]
+        read_only_fields = ['id', 'creator_name']
 
-       @extend_schema_field(serializers.CharField)
-       def get_creator_name(self, obj):
-           """Retorna o nome do criador do conteúdo"""
-           return obj.creator.username
-   ```
+    @extend_schema_field(serializers.CharField)
+    def get_creator_name(self, obj):
+        """Retorna o nome do criador do conteúdo"""
+        return obj.creator.username
+```
 
 ### Recursos Avançados do drf-spectacular
 

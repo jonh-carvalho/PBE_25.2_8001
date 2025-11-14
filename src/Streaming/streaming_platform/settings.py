@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_spectacular',
     'rest_framework.authtoken',
     'corsheaders',
     'content_app',
@@ -57,6 +58,7 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
+       'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
        'DEFAULT_AUTHENTICATION_CLASSES': [
            'rest_framework.authentication.TokenAuthentication',
        ],
@@ -64,6 +66,22 @@ REST_FRAMEWORK = {
            'rest_framework.permissions.IsAuthenticated',
        ],
    }
+
+# Configurações do drf-spectacular
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Streaming Platform API',
+    'DESCRIPTION': 'API completa para plataforma de streaming de áudio e vídeo',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True,
+    'SORT_OPERATIONS': False,
+    'TAGS': [
+        {'name': 'Authentication', 'description': 'Endpoints de autenticação'},
+        {'name': 'Content', 'description': 'Gerenciamento de conteúdo'},
+        {'name': 'Playlists', 'description': 'Gerenciamento de playlists'},
+        {'name': 'Users', 'description': 'Gerenciamento de usuários'},
+    ],
+}
 
 ROOT_URLCONF = 'streaming_platform.urls'
 
